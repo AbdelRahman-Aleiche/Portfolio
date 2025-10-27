@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AbdelRahman | Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body>
+    <div class="container">
+      <video
+        class="back-vid"
+        autoplay
+        loop
+        muted
+        playsinline
+        src="videos/galaxy.mp4"
+      ></video>
+
+      <header data-aos="fade-down" data-aos-duration="2000">
+        <div class="left">
+          <h2 class="animated-name"><span>AbdelRahman</span> Aleiche</h2>
+        </div>
+
+        <ul>
+          <li><a href="#">À propos</a></li>
+          <li><a href="#">Compétences</a></li>
+          <li><a href="#">Projets</a></li>
+        </ul>
+
+        <div class="box-icons">
+          <p><i class="bx bxs-envelope"></i></p>
+          <p><i class="bx bxs-phone"></i></p>
+          <p><i class="bx bxl-linkedin-square"></i></p>
+        </div>
+
+        <div class="menu-icon">
+          <i class="bx bx-menu"></i>
+        </div>
+      </header>
+
+      <div class="sidebar">
+        <div class="close-icon"><i class="bx bx-x"></i></div>
+        <ul>
+          <li><a href="#">Accueil</a></li>
+          <li><a href="#">À propos</a></li>
+          <li><a href="#">Compétences</a></li>
+          <li><a href="#">Projets</a></li>
+        </ul>
+      </div>
+
+      <div class="blackhole-box" data-aos="fade-down" data-aos-duration="2000">
+        <video
+          autoplay
+          loop
+          muted
+          playsinline
+          src="videos/blackhole.mp4"
+        ></video>
+      </div>
+
+      <section class="hero">
+        <div
+          class="hero-info autoBlur"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+        >
+          <div class="hero-info-title">
+            <i class="bx bxl-sketch"></i> Portfolio de Développeur Web
+          </div>
+          <h1 data-aos="fade-right" data-aos-duration="3000">
+            Offrir <span class="gradient">la meilleure</span> expérience de
+            <span class="gradient">projet</span>
+          </h1>
+          <p>
+            Je suis un développeur full-stack avec de l’expérience en
+            développement de sites web, d’applications mobiles et de logiciels.
+            Découvrez mes projets et mes compétences.
+          </p>
+          <button><i class="bx bx-send"></i> Me contacter</button>
+        </div>
+
+        <!-- Spline Viewer -->
+        <div class="skills-video-box">
+          <spline-viewer
+            class="skills-video"
+            url="https://prod.spline.design/TJKxuPDoMJEEEaSp/scene.splinecode"
+          ></spline-viewer>
+        </div>
+
+        <div class="scroll-down"></div>
+      </section>
+
+      <section class="info-section" id="about">
+        <h1 class="section-title autoDisplay">Bonjour 👋</h1>
+        <div class="info-cards">
+          <div class="card">
+            <h1>Je suis AbdelRahman</h1>
+            <p>
+              J’ai perfectionné mes compétences en développement front-end et
+              back-end, en créant des sites web dynamiques et réactifs.
+            </p>
+            <img
+              src="images/grid1.png"
+              alt="Image de développement web"
+              style="
+                width: 39%;
+                height: 39%;
+                object-fit: cover;
+                border-radius: 16px;
+                border: 2px solid rgba(255, 255, 255, 0.3);
+                box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+                transition: transform 0.3s, box-shadow 0.3s;
+              "
+              onmouseover="this.style.transform='translateY(-1.5px)'; this.style.boxShadow='0 8px 20px rgba(255, 255, 255, 0.3)';"
+              onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(255, 255, 255, 0.2)';"
+            />
+          </div>
+
+          <div class="card">
+            <h1>Technologies utilisées</h1>
+            <p>
+              Je maîtrise une variété de langages, frameworks et outils qui me
+              permettent de créer des applications robustes et évolutives.
+            </p>
+            <img
+              src="images/grid2.png"
+              style="opacity: 0.2"
+              alt="Illustration de technologies web"
+            />
+          </div>
+
+          <div class="card">
+            <h1>Flexible sur les horaires et les lieux</h1>
+            <p>
+              Je suis basé à Laval, Québec, et ouvert au travail à distance ou
+              en présentiel.
+            </p>
+            <video
+              src="videos/glob.mp4"
+              autoplay
+              loop
+              muted
+              playsinline
+            ></video>
+          </div>
+
+          <div class="card">
+            <h1>Ma passion pour le code</h1>
+            <p>
+              J’aime résoudre des problèmes et créer des choses grâce au code.
+              La programmation n’est pas seulement mon métier, c’est ma passion.
+            </p>
+            <img src="images/grid4.png" alt="Image de passion pour le code" />
+          </div>
+        </div>
+      </section>
+
+      <section class="my-project">
+        <h1 class="section-title autoDisplay">Mes Projets 💻</h1>
+
+        <div class="project-card">
+          <div class="project-vidbox autoBlur">
+            <video loop id="projectVideo1" src="videos/project1.mp4"></video>
+            <div class="hover-sign"></div>
+          </div>
+          <div class="project-info fadein-left">
+            <h1>Site Web <span class="gradient">Covoiturage</span></h1>
+            <p>
+              Site de covoiturage moderne et réactif permettant aux utilisateurs
+              de trouver et d’offrir des trajets facilement.
+            </p>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-vidbox autoBlur">
+            <video loop id="projectVideo2" src="videos/project2.mp4"></video>
+          </div>
+          <div class="project-info fadein-left">
+            <h1>Site Web <span class="gradient">Portfolio Moderne</span></h1>
+            <p>
+              Portfolio interactif et visuellement attrayant pour présenter des
+              projets et compétences.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="skills-section">
+        <h1 class="section-title autoDisplay">Mes Compétences 💪</h1>
+        <div class="skills-box autoDisplay">
+          <img
+            class="skills-image"
+            src="images/digital brain (2).png"
+            alt="Cerveau numérique"
+          />
+
+          <div class="Designer">
+            <h1 class="gradient">Designer <i class="bx bx-laptop"></i></h1>
+            <p>
+              J’ai une expertise en HTML, CSS, JavaScript et Figma. Ma force
+              réside dans l’équilibre entre esthétique et fonctionnalité.
+            </p>
+          </div>
+
+          <div class="coder">
+            <h1 class="gradient">
+              Développeur <i class="bx bx-code-block"></i>
+            </h1>
+            <p>
+              Je maîtrise HTML, CSS, JavaScript, TypeScript ainsi que React et
+              Node.js. Expérience avec MongoDB et MySQL.
+            </p>
+          </div>
+        </div>
+        <div
+          class="slider"
+          reverse="true"
+          style="--width: 100px; --height: 100px; --quantity: 9"
+        >
+          <div class="list">
+            <div class="item" style="--position: 1">
+              <img src="images/1.png" alt="" />
+            </div>
+            <div class="item" style="--position: 2">
+              <img src="images/2.png" alt="" />
+            </div>
+            <div class="item" style="--position: 3">
+              <img src="images/3.webp" alt="" />
+            </div>
+            <div class="item" style="--position: 4">
+              <img src="images/4.webp" alt="" />
+            </div>
+            <div class="item" style="--position: 5">
+              <img src="images/5.png" alt="" />
+            </div>
+            <div class="item" style="--position: 6">
+              <img src="images/6.png" alt="" />
+            </div>
+            <div class="item" style="--position: 7">
+              <img src="images/7.png" alt="" />
+            </div>
+            <div class="item" style="--position: 8">
+              <img src="images/8.png" alt="" />
+            </div>
+            <div class="item" style="--position: 9">
+              <img src="images/9.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-section">
+        <h1 class="section-title autoDisplay">Discutons 😊</h1>
+
+        <div class="social-box autoBlur">
+          <a href="tel:4385281518"
+            ><i class="bx bxs-phone"></i> (438) 528-1518</a
+          >
+          <a href="mailto:aleichea@gmail.com"
+            ><i class="bx bxl-telegram"></i> aleichea@gmail.com</a
+          >
+          <a
+            href="https://www.linkedin.com/in/abdelrahman-aleiche-8703a5304/"
+            target="_blank"
+            ><i class="bx bxl-linkedin-square"></i> Mon LinkedIn</a
+          >
+        </div>
+
+        <div class="contact-box autoBlur">
+          <p>
+            Que vous souhaitiez créer un nouveau site web, améliorer votre
+            plateforme actuelle ou donner vie à un projet unique, je suis là
+            pour vous aider.
+          </p>
+
+          <p>Nom complet</p>
+          <input
+            id="contact-name"
+            placeholder="Votre nom complet"
+            type="text"
+          />
+
+          <p>Adresse e-mail</p>
+          <input
+            id="contact-email"
+            placeholder="Votre adresse e-mail"
+            type="email"
+          />
+
+          <p>Message</p>
+          <input
+            id="contact-message"
+            class="input-message"
+            type="text"
+            placeholder="Entrez votre message..."
+          />
+
+          <button id="send-message">
+            Envoyer le message <i class="bx bx-mail-send"></i>
+          </button>
+        </div>
+      </section>
+      <section class="footer">
+        <h1>©️2025, fait par AbdelRahman Aleiche</h1>
+        <div class="box-icons">
+          <p><i class="bx bxs-envelope"></i></p>
+          <p><i class="bx bxs-phone"></i></p>
+          <p><i class="bx bxl-linkedin-square"></i></p>
+        </div>
+      </section>
+    </div>
+    <script
+      type="module"
+      src="https://unpkg.com/@splinetool/viewer@1.10.86/build/spline-viewer.js"
+    ></script>
+    <script src="app.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
