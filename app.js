@@ -36,7 +36,9 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // --- Scroll fluide pour le header et la sidebar ---
-  const navLinks = document.querySelectorAll("header ul li a, .sidebar ul li a");
+  const navLinks = document.querySelectorAll(
+    "header ul li a, .sidebar ul li a"
+  );
 
   navLinks.forEach((link) => {
     link.addEventListener("click", (e) => {
@@ -115,7 +117,9 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // --- Icône LinkedIn : ouvrir ton profil LinkedIn ---
-  const linkedinIcon = document.querySelector(".box-icons .bxl-linkedin-square");
+  const linkedinIcon = document.querySelector(
+    ".box-icons .bxl-linkedin-square"
+  );
   if (linkedinIcon) {
     linkedinIcon.addEventListener("click", () => {
       window.open(
@@ -142,6 +146,27 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
+  // --- Icônes du social-sidebar ---
+  const socialSidebarIcons = document.querySelectorAll(".social-sidebar a i");
+
+  socialSidebarIcons.forEach((icon) => {
+    icon.addEventListener("click", () => {
+      if (icon.classList.contains("bxs-envelope")) {
+        // Ouvrir le courriel
+        window.location.href = "mailto:aleichea@gmail.com";
+      } else if (icon.classList.contains("bxs-phone")) {
+        // Ouvrir le téléphone
+        window.location.href = "tel:4385281518";
+      } else if (icon.classList.contains("bxl-linkedin-square")) {
+        // Ouvrir le profil LinkedIn
+        window.open(
+          "https://www.linkedin.com/in/abdelrahman-aleiche-8703a5304/",
+          "_blank"
+        );
+      }
+    });
+  });
+
   // --- Scroll vers la section suivante ---
   const scrollDown = document.querySelector(".scroll-down");
   if (scrollDown) {
@@ -152,9 +177,4 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   }
-  
-
-
-
 });
-
